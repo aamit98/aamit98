@@ -1,165 +1,111 @@
 Amit Asher 👋
 
-Software Engineering · Backend / Systems / DevOps
+Software Engineering
+Backend • Systems • DevOps
+
 Ben-Gurion University (Year 4)
 
-I design and build reliable backend systems with a strong focus on clean architecture, data modeling, concurrency, and production-grade services.
-I enjoy working close to the OS, debugging race conditions, and turning vague specs into stable APIs.
+I build backend systems that actually work in the real world: clean APIs, solid data models, concurrency where it matters, and deployments that don’t collapse when someone else runs them.
 
-🔎 Open to 50%+ student roles — Backend / Infra / DevOps
-📍 Israel · Hybrid / Tel-Aviv area
+Open to 50%+ student roles
+Backend • Infra • DevOps
+Israel | Hybrid | Tel-Aviv area
 
-🧠 Core Skills
+What I’m Good At
 
 Languages
-Java · Python · C · C++·javascript
+Java · Python · C · C++ · JavaScript
 
-Backend & Systems
-Spring Boot · REST APIs · JPA / Hibernate · Authentication (JWT) · WebSockets·Nodejs
-Concurrency primitives · OS internals (xv6 RISC-V) · Networking & sockets
+Backend
+Spring Boot · Node.js · Express
+REST APIs · JWT authentication · WebSockets
 
-Data & Storage
-SQL · PostgreSQL · SQLite · Schema design · Transaction semantics
+Data
+PostgreSQL · SQLite · MongoDB
+Schema design · Transactions · Data consistency
 
 Infra / DevOps
-Docker · Docker Compose · Linux · Bash · Git · Basic CI
+Docker · Docker Compose · Linux · Git
+Basic CI/CD
 
-I care about readable code, predictable behavior, and measurable performance.
+Projects
+ReelHub
 
-🚀 Selected Projects
-🎥 ReelHub — Video Sharing Platform
+Video sharing platform (mobile-first)
+https://github.com/aamit98/Reelhub
 
-🔗 https://github.com/aamit98/Reelhub
-
-A mobile-first video sharing system with uploads, feeds, and playback.
-
-Tech stack
-Backend: Node.js · Express · MongoDB
-Frontend: React Native (Expo)
+Stack
+Node.js · Express · MongoDB
+React Native (Expo)
 
 Highlights
 
-Media upload pipeline (video + thumbnail)
+Video upload pipeline (video + thumbnail)
 
-REST API design for feeds and metadata
+Feed + metadata APIs
 
-Mobile video playback & UI state handling
+Mobile playback and UI state handling
 
-Early focus on backend/media correctness (URLs, streaming, storage)
+StudyBuddy
 
-🎓 StudyBuddy — Collaborative Learning Platform
+Collaborative learning platform
+https://github.com/aamit98/StuddyBuddy
 
-🔗 https://github.com/aamit98/StuddyBuddy
+A production-style system for forming and managing study groups at scale.
 
-A large-scale university project for smart study-group formation and collaboration.
-Designed as a production-style system, not a toy app.
-(Full ARD written and implemented incrementally.)
-
-Tech stack
-Backend: Spring Boot, REST APIs, JWT authentication
-Frontend: React (web)
-Mobile: React Native
-Database: PostgreSQL
-Architecture: DTO separation, service layers, modular design
+Stack
+Spring Boot · REST · JWT
+React (web) · React Native (mobile)
+PostgreSQL
 
 Backend focus
 
-User, group, and course domain modeling
+Domain modeling (users, courses, groups)
 
-Secure authentication & authorization
+Auth and authorization flows
 
-Real-time chat + file sharing flows
+Real-time chat + file sharing
 
-Designed for scalability, high load, and AI integration (matching & summaries)
+BistroFlow
 
-🍽️ BistroFlow — Restaurant Management System
+Restaurant management system
+https://github.com/aamit98/bistroflow
 
-🔗 https://github.com/aamit98/bistroflow
-
-Comprehensive system for managing restaurant operations.
-
-Tech stack
-Backend: Java · Spring Boot 4 · JWT
-Frontend: React
-Database: SQLite / PostgreSQL
+Stack
+Java · Spring Boot 4 · JWT
+React
+SQLite / PostgreSQL
 
 Features
 
-HR & staff scheduling
+Staff scheduling and HR flows
 
-Inventory and supplier management
+Inventory + suppliers
 
-Real-time notifications & analytics
+Notifications + analytics
 
-Clean layered backend architecture (services, DTOs, persistence)
+Clean layered architecture (services, DTOs, persistence)
 
-Strong emphasis on maintainability and real business flows.
+Mini-Dropbox
 
-☁️ Mini-Dropbox — File Storage System
+File storage system
+https://github.com/aamit98/mini-dropbox
 
-🔗 https://github.com/aamit98/mini-dropbox
-
-A distributed file-storage style project.
-
-Tech stack
-Backend: Java · Spring Boot
-Protocols: TFTP-style file transfer + REST
-Database: H2 / persistent storage
+Stack
+Java · Spring Boot
+TFTP-style file transfer + REST
+Persistent storage
 
 Highlights
 
-File upload/download lifecycle
+Upload/download lifecycle
 
-Authentication-aware access
+Auth-aware access control
 
-Separation between control plane (REST) and data plane (file transfer)
+Separate control-plane (REST) from data-plane (file transfer)
 
-🧵 Concurrency & OS Labs — xv6 (RISC-V)
+Contact
 
-Hands-on systems programming in C.
+Email: asherproc@gmail.com
 
-Work includes
-
-Peterson & tournament locks
-
-MPMC ring buffer
-
-Scheduling & synchronization experiments
-
-Throughput and contention measurements
-
-🔓 Buffer Overflow Exploit — CTF
-
-Security exercise targeting a vulnerable binary.
-
-Highlights
-
-Stack layout analysis
-
-Address leaks & payload crafting
-
-Documented mitigations and lessons learned
-
-📌 Current Focus
-
-Turning projects into clean, documented, recruiter-readable repos
-
-Backend interview prep: data structures, Java concurrency, debugging
-
-Dockerizing services & improving production-like deployment
-
-🤝 What I’m Looking For
-
-Backend / Infra / DevOps student roles where I can:
-
-Own components end-to-end
-
-Write real production code
-
-Learn through strong code reviews
-
-📫 Contact
-
-📧 Email: aamit@post.bgu.ac.il
-
-💼 LinkedIn: https://www.linkedin.com/in/amit-asher-555757382
+LinkedIn: https://www.linkedin.com/in/amit-asher-555757382
