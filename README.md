@@ -1,26 +1,27 @@
 Amit Asher 👋
 
 Software Engineering
-Backend • Systems • DevOps
+Backend · Data · Systems
 
 Ben-Gurion University (Year 4)
 
-I build backend systems that actually work in the real world: clean APIs, solid data models, concurrency where it matters, and deployments that don’t collapse when someone else runs them.
+I build backend systems with a focus on data correctness, clean APIs, and predictable behavior.
+I enjoy working close to the system, modeling real domains, and turning vague requirements into services teams can rely on.
 
 Open to 50%+ student roles
-Backend • Infra • DevOps
+Backend • Data • Infra
 Israel | Hybrid | Tel-Aviv area
 
-What I’m Good At
+Technical Focus
 
 Languages
-Java · Python · C · C++ · JavaScript
+Java · Python · JavaScript · C · C++
 
 Backend
 Spring Boot · Node.js · Express
 REST APIs · JWT authentication · WebSockets
 
-Data
+Data & Storage
 PostgreSQL · SQLite · MongoDB
 Schema design · Transactions · Data consistency
 
@@ -28,81 +29,110 @@ Infra / DevOps
 Docker · Docker Compose · Linux · Git
 Basic CI/CD
 
-Projects
-ReelHub
+I care about readable code, clear ownership, and systems that behave the same in prod as they do locally.
 
-Video sharing platform (mobile-first)
+Projects
+🎥 ReelHub
+
+Video Sharing Platform
+
 https://github.com/aamit98/Reelhub
 
+A mobile-first video sharing system built end-to-end.
+
 Stack
-Node.js · Express · MongoDB
-React Native (Expo)
+Backend: Node.js, Express, MongoDB
+Client: React Native (Expo)
 
-Highlights
+What matters
 
-Video upload pipeline (video + thumbnail)
+Video and thumbnail upload pipeline
 
-Feed + metadata APIs
+Feed and metadata APIs
 
 Mobile playback and UI state handling
 
-StudyBuddy
+Practical lessons in media storage, URLs, and streaming behavior
 
-Collaborative learning platform
+🎓 StudyBuddy
+
+Collaborative Learning Platform
+
 https://github.com/aamit98/StuddyBuddy
 
-A production-style system for forming and managing study groups at scale.
+A large-scale university project designed as a production-style system, not a demo.
 
 Stack
-Spring Boot · REST · JWT
-React (web) · React Native (mobile)
-PostgreSQL
+Backend: Spring Boot, REST, JWT
+Frontend: React
+Mobile: React Native
+Database: PostgreSQL
 
-Backend focus
+Backend & data focus
 
 Domain modeling (users, courses, groups)
 
-Auth and authorization flows
+Authentication and authorization flows
 
-Real-time chat + file sharing
+Real-time chat and file sharing
 
-BistroFlow
+Designed for scalability and high load
 
-Restaurant management system
+Includes a full requirements and architecture document.
+
+🍽️ BistroFlow
+
+Restaurant Management System
+
 https://github.com/aamit98/bistroflow
 
-Stack
-Java · Spring Boot 4 · JWT
-React
-SQLite / PostgreSQL
+A real business-style backend with multiple operational domains.
 
-Features
+Stack
+Backend: Java, Spring Boot 4, JWT
+Frontend: React
+Database: SQLite / PostgreSQL
+
+Key areas
 
 Staff scheduling and HR flows
 
-Inventory + suppliers
+Inventory and supplier management
 
-Notifications + analytics
+Notifications and analytics
 
 Clean layered architecture (services, DTOs, persistence)
 
-Mini-Dropbox
+☁️ Mini-Dropbox
 
-File storage system
+File Storage System
+
 https://github.com/aamit98/mini-dropbox
 
+A simplified Dropbox-style system focused on backend separation of concerns.
+
 Stack
-Java · Spring Boot
-TFTP-style file transfer + REST
-Persistent storage
+Backend: Java, Spring Boot
+Protocols: TFTP-style file transfer + REST
+Storage: Persistent local storage
 
 Highlights
 
-Upload/download lifecycle
+File upload/download lifecycle
 
-Auth-aware access control
+Authorization-aware access
 
-Separate control-plane (REST) from data-plane (file transfer)
+Clear separation between control plane (API) and data plane (file transfer)
+
+What I’m Looking For
+
+Backend / Data / Infra student roles where I can:
+
+Own backend components end-to-end
+
+Work with real data and real constraints
+
+Learn from strong code reviews and production systems
 
 Contact
 
