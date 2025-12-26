@@ -76,7 +76,7 @@ A real business-style backend with multiple operational domains.
 Stack  
 Backend - Java - Spring Boot 4 - JWT  
 Frontend - React  
-Database - SQLite - PostgreSQL
+Database - H2 - PostgreSQL
 
 Key areas  
 - Staff scheduling and HR flows  
