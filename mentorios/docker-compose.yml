@@ -1,0 +1,55 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: pgvector/pgvector:pg16
+    container_name: mentorios-db
+    environment:
+      POSTGRES_DB: mentorios
+      POSTGRES_USER: mentorios_user
+      POSTGRES_PASSWORD: mentorios_pass
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U mentorios_user -d mentorios"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: mentorios-backend
+    depends_on:
+      postgres:
+        condition: service_healthy
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/mentorios
+      SPRING_DATASOURCE_USERNAME: mentorios_user
+      SPRING_DATASOURCE_PASSWORD: mentorios_pass
+      JWT_SECRET: ${JWT_SECRET:-your-secret-key-change-in-production-min-256-bits-long}
+      OPENAI_API_KEY: ${OPENAI_API_KEY:-}
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./backend/uploads:/app/uploads
+    restart: unless-stopped
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: mentorios-frontend
+    depends_on:
+      - backend
+    ports:
+      - "5173:5173"
+    environment:
+      VITE_API_URL: http://localhost:8080
+    restart: unless-stopped
+
+volumes:
+  postgres_data:
