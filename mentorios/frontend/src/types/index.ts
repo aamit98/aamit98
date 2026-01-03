@@ -56,3 +56,30 @@ export interface Application {
   resumeVersion?: string;
   notes?: string;
 }
+
+export interface Course {
+  id: number;
+  name: string;
+  code?: string;
+  semester?: string;
+  credits?: number;
+  status: 'ACTIVE' | 'COMPLETED' | 'DROPPED';
+  createdAt: string;
+  updatedAt: string;
+}
+
+export interface Exam {
+  id: number;
+  courseId: number;
+  courseName: string;
+  name: string;
+  examDate: string;
+  weight?: number;
+  scope?: string;
+  status: 'UPCOMING' | 'DONE' | 'MISSED';
+  grade?: number;
+  notes?: string;
+  location?: string;
+  daysUntil: number;
+  createdAt: string;
+}
