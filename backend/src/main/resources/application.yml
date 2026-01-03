@@ -1,0 +1,62 @@
+spring:
+  application:
+    name: mentorios
+
+  datasource:
+    url: ${SPRING_DATASOURCE_URL:jdbc:postgresql://localhost:5432/mentorios}
+    username: ${SPRING_DATASOURCE_USERNAME:mentorios_user}
+    password: ${SPRING_DATASOURCE_PASSWORD:mentorios_pass}
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    show-sql: false
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
+
+  flyway:
+    enabled: true
+    baseline-on-migrate: true
+    locations: classpath:db/migration
+
+  servlet:
+    multipart:
+      max-file-size: 50MB
+      max-request-size: 50MB
+
+  ai:
+    openai:
+      api-key: ${OPENAI_API_KEY}
+      embedding:
+        options:
+          model: text-embedding-3-small
+      chat:
+        options:
+          model: gpt-4-turbo-preview
+          temperature: 0.3
+
+server:
+  port: 8080
+  error:
+    include-message: always
+    include-binding-errors: always
+
+mentorios:
+  jwt:
+    secret: ${JWT_SECRET}
+    expiration: 86400000  # 24 hours
+  upload:
+    path: ${UPLOAD_PATH:./uploads}
+  rag:
+    chunk-size: 1000
+    chunk-overlap: 150
+    top-k: 8
+
+logging:
+  level:
+    com.mentorios: DEBUG
+    org.springframework.security: DEBUG
+    org.hibernate.SQL: DEBUG
